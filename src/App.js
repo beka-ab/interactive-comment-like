@@ -1,14 +1,23 @@
-import Button from "./Button";
 import { useState } from "react";
+import "./styles.scss";
+import Post from "./components/Post";
+import { Users } from "./data";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <Button count={count} setCount={setCount} />
-      <br />
-      <Button count={count} setCount={setCount} />
-    </div>
+    <>
+      {Users.map((e) => (
+        <Post
+          index={e.id}
+          img={e.profilePicture}
+          name={e.username}
+          potstime={e.lastseen}
+          postcontent={e.post}
+          increament={e.increament}
+          decreamnent={e.decreamnent}
+        />
+      ))}
+    </>
   );
 }
 
