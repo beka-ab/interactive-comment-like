@@ -1,0 +1,33 @@
+@import "../styles/variables.scss";
+.bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.bottom-left {
+  background-color: $bg-c;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7.5px;
+}
+.count {
+  color: $reply-c;
+}
+.btn {
+  border: none;
+  color: $reply-c;
+  cursor: pointer;
+  background-color: $bg-c;
+}
+.bottom-right {
+  color: $reply-c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@ import Replyform from "./Reply";
 import { Users } from "../data";
 import Commentstrct from "./Commentstrct";
 import Bottomline from "./Bottomline";
+import "./post.scss";
 const Post = (props) => {
   const [replyForm, setReplyform] = useState(null);
 

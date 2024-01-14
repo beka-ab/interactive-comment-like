@@ -2,6 +2,7 @@ import { useState } from "react";
 import Commentstrct from "./Commentstrct";
 import Bottomline from "./Bottomline";
 import { Users } from "../data";
+import "./reply.scss";
 
 const Replyform = (props) => {
   const handleChange = (e) => {
@@ -20,7 +21,7 @@ const Replyform = (props) => {
   return (
     <>
       {props.replyForm === props.itemnumber && (
-        <div className="reply-container">
+        <div className="reply-wrapper">
           <textarea
             onChange={handleChange}
             value={draftComment}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./bottomline.scss";
 const Bottomline = (props) => {
   const [count, setCount] = useState(0);
   return (

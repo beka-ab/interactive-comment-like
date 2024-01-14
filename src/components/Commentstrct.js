@@ -1,3 +1,4 @@
+import "./commentstrct.scss";
 const Commentstrct = (props) => {
   return (
     <>
