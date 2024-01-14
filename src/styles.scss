@@ -27,6 +27,14 @@ body {
   margin: 16px;
   border-radius: 8px;
 }
+
+.commentBtn {
+  border-radius: 8px;
+  background: var(--Moderate-Blue, #5357b6);
+  padding: 12px 30px;
+  color: #fff;
+  border: none;
+}
 .bottom-content {
   display: flex;
   align-items: center;
@@ -45,7 +53,62 @@ body {
 .btn {
   border: none;
   color: $reply-c;
+  cursor: pointer;
+  background-color: $bg-c;
 }
 .count {
   color: $reply-c;
+}
+.bottom-right {
+  color: $reply-c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  cursor: pointer;
+}
+.reply-content {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Light-Gray, #e9ebf0);
+  background: var(--White, #fff);
+  height: 10vh;
+  padding: 5px;
+}
+.replyContent {
+  padding: 20px;
+  background-color: $bg-c;
+  flex: 1;
+}
+.post-content {
+  margin-top: 5px;
+  color: var(--Grayish-Blue, #67727e);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.reply-containter {
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.user-name {
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.post-time {
+  color: var(--Grayish-Blue, #67727e);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
